@@ -1,5 +1,10 @@
-import 'nextdash/styles/globals.css'
+import Sidebar from 'nextdash/components/Sidebar';
+import 'nextdash/styles/globals.css';
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+  <Sidebar>
+  <Component {...pageProps} />
+  </Sidebar>
+  );
 }
